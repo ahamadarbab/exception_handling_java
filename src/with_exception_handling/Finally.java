@@ -1,6 +1,7 @@
 package with_exception_handling;
 
-public class tryCatch {
+public class Finally {
+
     public static void main(String[] args) {
 
         int a = 10;
@@ -18,8 +19,11 @@ public class tryCatch {
             System.out.println("Exception occurred : " + e.getMessage() + " --- " + e.getClass());
         }
 
-        System.out.println("a is : " + a);
-        System.out.println("b is : " + b);
-        System.out.println("res is : " + res);
+        finally
+        {
+            System.out.println("a is : " + a);
+            System.out.println("b is : " + b);
+            System.out.println("res is : " + res);
+        }
     }
 }
